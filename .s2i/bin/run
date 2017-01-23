@@ -13,10 +13,9 @@
 # The run script executes the server that runs your application.
 #
 # For more information see the documentation:
-#	https://github.com/openshift/source-to-image/blob/master/docs/builder_image.md
-#
+#	https://github.com/openshift/source-to-image/blob/master/docs/builder_image.mdmk
 
-cd /opt/openshift && \
+mkdir -p /root/openshift && cd /opt/openshift && \
 exec java \
     -Djava.security.egd=file:/dev/./urandom \
     -jar /opt/openshift/app.jar \
